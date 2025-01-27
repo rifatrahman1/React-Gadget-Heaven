@@ -13,8 +13,7 @@ import Dashboard from './Pages/Dashboard';
 import Gadgets from './Components/Gadgets';
 import ErrorPage from './Components/ErrorPage';
 import Details from './Components/Details';
-import Context from './Components/Context';
-// import Gadgets from './Components/Gadgets';
+// import Context from './Components/Context';
 
 const router = createBrowserRouter([
   {
@@ -50,7 +49,13 @@ const router = createBrowserRouter([
       },
       {
         path: '/dashboard',
-        element: <Dashboard></Dashboard>
+        element: <Dashboard></Dashboard>,
+        children: [
+          // {
+          //   path: '',
+          //   // element: <Cart></Cart>
+          // }
+        ]
       }
     ],
   },
@@ -58,6 +63,7 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Context><RouterProvider router={router}></RouterProvider></Context>
+    {/* <Context><RouterProvider router={router}></RouterProvider></Context> */}
+    <RouterProvider router={router}></RouterProvider>
   </StrictMode>,
 )

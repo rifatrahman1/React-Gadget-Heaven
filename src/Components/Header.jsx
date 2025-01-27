@@ -1,27 +1,27 @@
 import { Link, NavLink, useLocation, useParams } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
-import { useShareData } from "./Context";
+// import { useShareData } from "./Context";
 
 const Header = () => {
-    const { setCount, count } = useShareData();
-    const cart_count = localStorage.getItem('add_to_cart');
+    // const { setCount, count } = useShareData();
+    // const cart_count = localStorage.getItem('add_to_cart');
 
     const location = useLocation();
     const { params_id } = useParams();
     const { category } = useParams();
-    // Conditional styles and content based on route
+
     const isHome = location.pathname === '/';
     const isStatistics = location.pathname === '/statistics';
     const isDashboard = location.pathname === '/dashboard';
     const isDetails = location.pathname === `/details/${params_id}`;
     const isCategory = location.pathname === `/category/${category}`;
 
-    // Default values
+
     const defaultTextColor = 'text-white-900';
     const defaultBg = 'bg-[#9538E2]';
 
-    // Conditional text color
+
     const text = isHome
         ? 'text-white'
         : isStatistics
@@ -32,7 +32,7 @@ const Header = () => {
                     ? 'text-black'
                     : defaultTextColor;
 
-    // Conditional background color
+
     const headerBg = isHome
         ? 'bg-[#9538E2] h-[700px] pt-7.5'
         : isStatistics
@@ -45,7 +45,7 @@ const Header = () => {
                         ? 'bg-[#9538E2] h-[700px] pt-7.5'
                         : defaultBg;
 
-    // Dynamic content
+
     const headerContent = isHome ? (
         <div className={`rounded-4xl ${headerBg}`}>
             <div className={`flex items-center justify-around  ${text}`}>
@@ -63,7 +63,8 @@ const Header = () => {
                 </div>
                 <div className="flex items-center gap-4">
                     <div className="bg-white px-3 py-3 rounded-full">
-                        {count || ''}<IoCartOutline className="text-xl text-black" />
+                        {/* {count || ''} */}
+                        <IoCartOutline className="text-xl text-black" />
                     </div>
                     <div className="bg-white px-3 py-3 rounded-full">
                         <FaRegHeart className="text-xl text-black" />
@@ -100,7 +101,7 @@ const Header = () => {
                 </div>
                 <div className="flex items-center gap-4">
                     <div className="bg-white px-3 py-3 rounded-full">
-                        {count || ''}<IoCartOutline className="text-xl text-black" />
+                        <IoCartOutline className="text-xl text-black" />
                     </div>
                     <div className="bg-white px-3 py-3 rounded-full">
                         <FaRegHeart className="text-xl text-black" />
@@ -130,7 +131,7 @@ const Header = () => {
                 </div>
                 <div className="flex items-center gap-4">
                     <div className="bg-white px-3 py-3 rounded-full">
-                        {count || ''}<IoCartOutline className="text-xl text-black" />
+                        <IoCartOutline className="text-xl text-black" />
                     </div>
                     <div className="bg-white px-3 py-3 rounded-full">
                         <FaRegHeart className="text-xl text-black" />
@@ -142,7 +143,7 @@ const Header = () => {
                 <h1 className="text-[40px] font-bold ">Dashboard</h1>
                 <p className="text-white mt-4 ">Explore the latest gadgets that will take your experience to the next level. From smart devices to <br /> the coolest accessories, we have it all!</p>
                 <div className="flex items-center gap-6 text-center justify-center mt-8">
-                    <NavLink to={'/cart'} className={({ isActive }) => (isActive ? 'px-16 py-[13px] bg-white rounded-4xl text-[#9538E2] text-[18px] font-extrabold' : 'px-16 py-[13px] border border-white rounded-4xl text-white')}>Cart</NavLink>
+                    <NavLink to={'/cart'} className={({ isActive }) => (isActive ? 'px-16 py-[13px] border border-white rounded-4xl text-white' : 'px-16 py-[13px] bg-white rounded-4xl text-[#9538E2] text-[18px] font-extrabold')}>Cart</NavLink>
                     <NavLink to={'/wishlist'} className={({ isActive }) => (isActive ? 'px-16 py-[13px] bg-white rounded-4xl text-[#9538E2] text-[18px] font-extrabold' : 'px-16 py-[13px] border border-white rounded-4xl text-white ')}>Wishlist</NavLink>
                 </div>
             </div>
@@ -165,7 +166,7 @@ const Header = () => {
                 </div>
                 <div className="flex items-center gap-4">
                     <div className="bg-white px-3 py-3 rounded-full">
-                        {count || ''}<IoCartOutline className="text-xl text-black" />
+                        <IoCartOutline className="text-xl text-black" />
                     </div>
                     <div className="bg-white px-3 py-3 rounded-full">
                         <FaRegHeart className="text-xl text-black" />
@@ -196,7 +197,7 @@ const Header = () => {
                 </div>
                 <div className="flex items-center gap-4">
                     <div className="bg-white px-3 py-3 rounded-full">
-                        {count || ''}<IoCartOutline className="text-xl text-black" />
+                        <IoCartOutline className="text-xl text-black" />
                     </div>
                     <div className="bg-white px-3 py-3 rounded-full">
                         <FaRegHeart className="text-xl text-black" />
