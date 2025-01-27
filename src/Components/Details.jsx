@@ -4,7 +4,8 @@ import { FaRegStar } from "react-icons/fa6";
 import { BiCartAdd } from "react-icons/bi";
 import { FaRegHeart } from "react-icons/fa";
 import { useEffect, useState } from "react";
-import { add_favorite } from "../Utilities/Utilities";
+import { add_favorite } from "../Utilities/Utilities_Cart";
+import { add_wishlist } from "../Utilities/Utilites_Wishlist";
 
 const Details = () => {
     const { params_id } = useParams();
@@ -21,6 +22,10 @@ const Details = () => {
 
     const handle_add_to_cart = (gadget) => {
         add_favorite(gadget);
+    };
+
+    const handle_add_wishlist = (gadget) => {
+        add_wishlist(gadget);
     };
 
     return (
@@ -66,7 +71,7 @@ const Details = () => {
                     <button onClick={() => handle_add_to_cart(gadgets)} className="flex items-center bg-[#9538E2] text-[18px] font-bold text-white gap-4 rounded-4xl px-5.5 py-[11px] mt-5 cursor-pointer">
                         Add To Cart <BiCartAdd className="text-2xl" />
                     </button>
-                    <button onClick={() => handle_add_to_cart(gadgets)} className="border border-[#09080F0D] p-2 cursor-pointer rounded-full mt-5">
+                    <button onClick={() => handle_add_wishlist(gadgets)} className="border border-[#09080F0D] p-2 cursor-pointer rounded-full mt-5">
                         <FaRegHeart className="text-2xl" />
                     </button>
                 </div>

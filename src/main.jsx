@@ -13,6 +13,8 @@ import Dashboard from './Pages/Dashboard';
 import Gadgets from './Components/Gadgets';
 import ErrorPage from './Components/ErrorPage';
 import Details from './Components/Details';
+import Cart from './Components/Cart';
+import Wish from './Components/Wish';
 // import Context from './Components/Context';
 
 const router = createBrowserRouter([
@@ -52,9 +54,17 @@ const router = createBrowserRouter([
         element: <Dashboard></Dashboard>,
         children: [
           // {
-          //   path: '',
-          //   // element: <Cart></Cart>
-          // }
+          //   path: '/dashboard',
+          //   element: <p className='text-red-500'>Rifat Rahman add to cart</p>
+          // },
+          {
+            path: '/dashboard/cart',
+            element: <Cart></Cart>
+          },
+          {
+            path: '/dashboard/wishlist',
+            element: <Wish></Wish>
+          }
         ]
       }
     ],

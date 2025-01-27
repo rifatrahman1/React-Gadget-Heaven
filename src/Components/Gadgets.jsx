@@ -1,5 +1,5 @@
 
-import { useLoaderData, useLocation, useNavigate, useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import Gadget from "./Gadget";
 import { useEffect, useState } from "react";
 
