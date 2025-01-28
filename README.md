@@ -6,6 +6,11 @@ This is a fully functional gadget e-commerce website where users can browse, sea
 
 ## Live Link:
 
+Live link : https://dulcet-crisp-140605.netlify.app/news
+
+## Github Link
+
+Github link : https://github.com/rifatrahman1/React-Gadget-Heaven
 
 ---
 

@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 import { add_favorite, get_all_favorites } from "../Utilities/Utilities_Cart";
 import { add_wishlist } from "../Utilities/Utilites_Wishlist";
 import { useCart } from "../Utilities/Cart_Context";
-import toast from "react-hot-toast";
 
 const Details = () => {
     const { params_id } = useParams();
