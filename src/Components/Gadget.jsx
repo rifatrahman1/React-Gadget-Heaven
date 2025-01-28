@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Gadget = ({gadget}) => {
     const {id, title, image, price} = gadget || {};
     return (
-        <div className="bg-white rounded-2xl p-5 h-[450px] flex flex-col justify-between">
+        <div className="bg-white shadow rounded-2xl p-5 h-[450px] flex flex-col justify-between">
             <img className="rounded-xl w-[290px] h-[190px]" src={image} alt="" />
             <h3 className="text-2xl font-semibold mt-6 text-[#09080F]">{title}</h3>
             <p className="mt-3 text-xl font-medium text-[#09080F99]">Price: {price}$</p>

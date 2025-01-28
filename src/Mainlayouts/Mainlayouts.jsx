@@ -8,12 +8,12 @@ const Mainlayouts = () => {
     const location = useLocation();
     const params = useParams();
 
- 
-    
+
+
     return (
         <div>
             <Toaster position="top-left"></Toaster>
-            <div className={`${location.pathname === '/' || location.pathname === `/category/${params.category}` ? 'container mx-auto' : 'w-full' }`}>
+            <div className={`${location.pathname === '/' || location.pathname === `/category/${params.category}` ? 'container mx-auto' : 'w-full'}`}>
                 {/* Header  */}
                 <Header></Header>
             </div>
@@ -21,8 +21,10 @@ const Mainlayouts = () => {
                 {/* outlet */}
                 <Outlet></Outlet>
             </div>
-            {/* footer  */}
-            <Footer></Footer>
+            <div className="bg-white">
+                {/* footer  */}
+                <Footer></Footer>
+            </div>
         </div>
     );
 };

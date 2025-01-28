@@ -15,7 +15,7 @@ import ErrorPage from './Components/ErrorPage';
 import Details from './Components/Details';
 import Cart from './Components/Cart';
 import Wish from './Components/Wish';
-// import Context from './Components/Context';
+import { CartProvider } from './Utilities/Cart_Context';
 
 const router = createBrowserRouter([
   {
@@ -73,7 +73,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <Context><RouterProvider router={router}></RouterProvider></Context> */}
-    <RouterProvider router={router}></RouterProvider>
+    <CartProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </CartProvider>
   </StrictMode>,
 )
