@@ -16,10 +16,12 @@ import Details from './Components/Details';
 import Cart from './Components/Cart';
 import Wish from './Components/Wish';
 import { CartProvider } from './Utilities/Cart_Context';
+import News from './Components/News';
+import HeadNews from './Components/HeadNews';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Mainlayouts></Mainlayouts>,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
@@ -31,32 +33,41 @@ const router = createBrowserRouter([
           {
             path: '',
             element: <Gadgets></Gadgets>,
-            loader: () => fetch('../gadgets.json'),
+            loader: () => fetch('../gadget.json'),
           },
           {
             path: '/category/:category',
             element: <Gadgets></Gadgets>,
-            loader: () => fetch('../gadgets.json'),
+            loader: () => fetch('../gadget.json'),
           },
         ],
       },
       {
         path: '/details/:params_id',
         element: <Details></Details>,
-        loader: () => fetch('../gadgets.json')
+        loader: () => fetch('../gadget.json')
       },
       {
         path: '/statistics',
         element: <Statistics></Statistics>
       },
       {
+        path: '/news',
+        element: <HeadNews></HeadNews>,
+        loader: () => fetch('../headnews.json'),
+        children: [
+          {
+            path: '/news/letter',
+            element: <News></News>,
+            loader: () => fetch('../news.json')
+          },
+        ]
+      },
+
+      {
         path: '/dashboard',
         element: <Dashboard></Dashboard>,
         children: [
-          // {
-          //   path: '/dashboard',
-          //   element: <p className='text-red-500'>Rifat Rahman add to cart</p>
-          // },
           {
             path: '/dashboard/cart',
             element: <Cart></Cart>

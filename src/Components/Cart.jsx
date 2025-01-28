@@ -1,18 +1,27 @@
 
 
+
 import { useEffect, useState } from "react";
 import { get_all_favorites, remove_favorite } from "../Utilities/Utilities_Cart";
-import success from '../assets/successfull.png'
-
+import Swal from "sweetalert2";
 
 
 import sort from '../assets/sort.png'
 import Cart_List from "./Cart_List";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 const Cart = () => {
+
+    const navigate = useNavigate();
+    
     const [gadgets, set_gadgets] = useState([]);
     const [disable, set_disable] = useState(false);
+    const [total , set_total] = useState(0);
+
+    useEffect (() => {
+        const total = gadgets.reduce((sum, gadget) => sum + (gadget.price || 0), 0);
+        set_total(total.toFixed(2));
+    }, [gadgets])
 
     const purchase = get_all_favorites();
     useEffect(() => {
@@ -35,13 +44,6 @@ const Cart = () => {
         set_gadgets(favorite);
     }
 
-    const handle_all_remove = () => {
-        localStorage.removeItem('favorites'); 
-        set_gadgets([]);
-        toast.success('Successfully This is Product Gadget Removed...!');
-    };
-    
-
     const handle_sorted = (sort_by) => {
         if (sort_by === 'price') {
             const sorted = [...gadgets].sort((a, b) => b.price - a.price);
@@ -49,36 +51,42 @@ const Cart = () => {
         }
     }
 
-
+    const handlePurchase = () => {
+        Swal.fire({
+            title: "Are you sure?",
+            text: `Your total cost is $${total}. Do you want to confirm your purchase?`,
+            icon: "question",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, purchase it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title: "Success!",
+                    text: "Your purchase was successful.",
+                    icon: "success",
+                    confirmButtonColor: "#3085d6",
+                }).then(() => {
+                    localStorage.removeItem('favorites');
+                    toast.success('Successfully This is Gadget Purchase it...!');
+                    set_gadgets([]);
+                    navigate("/");
+                });
+            }
+        });
+    };
 
     return (
         <div>
             <div className="flex justify-between items-center my-12">
                 <h3 className='text-2xl font-bold'>Cart</h3>
                 <div className="flex items-center gap-6">
-                    <h1 className='text-2xl font-bold'>
-                        Total cost: ${gadgets.reduce((sum, gadget) => sum + (gadget.price || 0), 0).toFixed(2)}
-                    </h1>
+                    <h1 className='text-2xl font-bold'> Total cost: ${total}</h1>
                     <button onClick={() => handle_sorted('price')} className='flex items-center gap-4 text-[18px] font-semibold px-5.5 py-3 rounded-4xl text-[#9538E2] border border-[#9538E2] cursor-pointer'>Sort by Price <img src={sort} alt="" /></button>
-                    <button disabled={disable} onClick={() => document.getElementById('my_modal_5').showModal()} className='text-[18px] font-semibold btn px-5.5 py-3 rounded-4xl text-white border bg-[#9538E2]'>Purchase</button>
+                    <button disabled={disable} onClick={handlePurchase} className='text-[18px] font-semibold btn px-5.5 py-3 rounded-4xl text-white border bg-[#9538E2]'>Purchase</button>
                 </div>
             </div>
-
-            <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-                <div className="modal-box text-center p-8">
-                    <div className="flex justify-center">
-                        <img src={success} alt="" />
-                    </div>
-                    <h3 className="font-bold text-3xl mt-6">Payment Successfully</h3>
-                    <p className="py-4 text-xl font-medium text-[#09080F99]">Thanks for purchasing.</p>
-                    <p className=" text-xl font-medium text-[#09080F99]">Total cost: ${gadgets.reduce((sum, gadget) => sum + (gadget.price || 0), 0).toFixed(2)}</p>
-                    <div className="modal-action flex justify-center">
-                        <form method="dialog ">
-                            <button onClick={handle_all_remove} className="w-full btn bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition px-5.5 py-2.5">Close</button>
-                        </form>
-                    </div>
-                </div>
-            </dialog>
 
             {
                 purchase.length <= 0 ? <div className="flex flex-col items-center justify-center py-20 mb-12 rounded-3xl shadow bg-gray-100">

@@ -7,26 +7,26 @@ const Footer = () => {
                 <p className="mt-3 font-medium text-[#09080F99]">Leading the way in cutting-edge technology and innovation.</p>
                 <div className="divider"></div>
                 <div className="flex justify-evenly">
-                <nav className="flex flex-col space-y-3">
-                    <h6 className=" text-[18px] font-bold text-[#09080F]">Services</h6>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
-                </nav>
-                <nav className="flex flex-col space-y-3">
-                    <h6 className=" text-[18px] font-bold text-[#09080F]">Company</h6>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
-                </nav>
-                <nav className="flex flex-col space-y-3">
-                    <h6 className=" text-[18px] font-bold text-[#09080F]">Legal</h6>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
-                    <a className="link link-hover">Cookie policy</a>
-                </nav>
+                    <nav className="flex flex-col space-y-3">
+                        <h6 className=" text-[18px] font-bold text-[#09080F]">Services</h6>
+                        <a className="link link-hover">Product Support</a>
+                        <a className="link link-hover">Order Tracking</a>
+                        <a className="link link-hover">Shipping & Delivery</a>
+                        <a className="link link-hover">Returns</a>
+                    </nav>
+                    <nav className="flex flex-col space-y-3">
+                        <h6 className=" text-[18px] font-bold text-[#09080F]">Company</h6>
+                        <a className="link link-hover">About us</a>
+                        <a className="link link-hover">Careers</a>
+                        <a className="link link-hover">Contact</a>
+                        <a className="link link-hover">Press kit</a>
+                    </nav>
+                    <nav className="flex flex-col space-y-3">
+                        <h6 className=" text-[18px] font-bold text-[#09080F]">Legal</h6>
+                        <a className="link link-hover">Terms of use</a>
+                        <a className="link link-hover">Privacy policy</a>
+                        <a className="link link-hover">Cookie policy</a>
+                    </nav>
                 </div>
             </div>
         </div>

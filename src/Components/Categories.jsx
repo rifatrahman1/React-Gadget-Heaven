@@ -7,7 +7,7 @@ import { NavLink, useLocation } from "react-router-dom";
 const Categories = ({ categories }) => {
     const location = useLocation();
     return (
-        <div className="col-span-1 flex flex-col space-y-2 bg-white shadow p-6 w-[280px] rounded-3xl  max-h-[62vh]">
+        <div className="col-span-1 flex flex-col space-y-2 bg-white shadow p-6 w-[280px] rounded-3xl  max-h-[69vh]">
             {
                 categories.map((gadget) => (
                     <NavLink

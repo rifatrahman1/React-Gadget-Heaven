@@ -7,31 +7,36 @@
     {
         "id": 2,
         "category": "Laptops",
-        "value": "laptops"
+        "value": "laptop"
     },
     {
         "id": 3,
-        "category": "Phones",
-        "value": "phones"
+        "category": "Monitor",
+        "value": "monitor"
     },
     {
         "id": 4,
-        "category": "Accessories",
-        "value": "accessories"
+        "category": "Keyboard",
+        "value": "keyboard"
     },
     {
         "id": 5,
-        "category": "Smart Watches",
-        "value": "smart-watches"
+        "category": "Mouse",
+        "value": "mouse"
     },
     {
         "id": 6,
-        "category": "MacBook",
-        "value": "macbook"
+        "category": "Headphone",
+        "value": "headphone"
     },
     {
         "id": 7,
-        "category": "Iphone",
-        "value": "iphone"
+        "category": "Speaker",
+        "value": "speaker"
+    },
+    {
+        "id": 8,
+        "category": "Watch",
+        "value": "watch"
     }
 ]

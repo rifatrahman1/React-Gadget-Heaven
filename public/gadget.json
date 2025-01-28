@@ -1,336 +1,366 @@
 [
     {
         "id": 1,
-        "title": "HP Spectre x360",
-        "image": "https://i.ibb.co.com/KNxYqP3/HP-Spectre-x360.webp",
-        "category": "Laptops",
+        "title": "Gaming Laptop",
+        "image": "https://i.ibb.co.com/N7CJDty/Gaming-Laptop.jpg",
+        "category": "laptop",
         "price": 1200,
-        "description": "Powerful convertible laptop with 16GB RAM and 512GB SSD.",
-        "specification": [
-            "16GB RAM",
-            "512GB SSD",
-            "Intel i7 Processor"
-        ],
+        "description": "High-performance gaming laptop with the latest GPU.",
+        "specification": {
+            "Processor": "Intel Core i7",
+            "RAM": "16GB",
+            "Storage": "512GB SSD",
+            "Display": "15.6 inch Full HD"
+        },
         "availability": true,
-        "rating": 4.8
+        "rating": 4.5
     },
     {
         "id": 2,
-        "title": "MacBook Pro 14",
-        "image": "https://i.ibb.co.com/5KS0rWv/Mac-Book-Pro-14.jpg",
-        "category": "MacBook",
-        "price": 2500,
-        "description": "High-performance laptop with Apple M1 Pro chip.",
-        "specification": [
-            "M1 Pro Chip",
-            "16GB RAM",
-            "512GB SSD"
-        ],
-        "availability": true,
-        "rating": 4.9
+        "title": "Mechanical Keyboard",
+        "image": "https://i.ibb.co.com/XY9V2FX/Mechanical-Keyboard.jpg",
+        "category": "keyboard",
+        "price": 100,
+        "description": "RGB backlit mechanical keyboard with durable keys.",
+        "specification": {
+            "Switch Type": "Cherry MX Red",
+            "Key Rollover": "N-Key",
+            "Connectivity": "USB-C"
+        },
+        "availability": false,
+        "rating": 4.8
     },
     {
         "id": 3,
-        "title": "iPhone 14 Pro",
-        "image": "https://i.ibb.co.com/DDhy8jY/i-Phone-14-Pro.jpg",
-        "category": "Iphone",
-        "price": 1300,
-        "description": "Flagship smartphone with A16 Bionic chip and Dynamic Island.",
-        "specification": [
-            "A16 Bionic Chip",
-            "48MP Camera",
-            "ProMotion Display"
-        ],
+        "title": "Wireless Mouse",
+        "image": "https://i.ibb.co.com/17SC1QB/Wireless-Mouse.jpg",
+        "category": "mouse",
+        "price": 65,
+        "description": "Ergonomic wireless mouse with adjustable DPI.",
+        "specification": {
+            "DPI": "800-1600",
+            "Battery Life": "12 months",
+            "Connectivity": "Bluetooth 5.0"
+        },
+        "availability": false,
+        "rating": 4.3
+    },
+    {
+        "id": 4,
+        "title": "4K Monitor",
+        "image": "https://i.ibb.co.com/B6k4BS3/4-K-Monitor.jpg",
+        "category": "monitor",
+        "price": 300,
+        "description": "27-inch 4K Ultra HD monitor with HDR support.",
+        "specification": {
+            "Resolution": "3840x2160",
+            "Refresh Rate": "144Hz",
+            "Ports": "HDMI, DisplayPort"
+        },
         "availability": true,
         "rating": 4.7
     },
     {
-        "id": 4,
-        "title": "Samsung Galaxy S23 Ultra",
-        "image": "https://i.ibb.co.com/nnDbmWB/Samsung-Galaxy-S23-Ultra.jpg",
-        "category": "Phones",
-        "price": 1400,
-        "description": "Premium Android smartphone with 200MP camera.",
-        "specification": [
-            "200MP Camera",
-            "8K Video Recording",
-            "Snapdragon 8 Gen 2"
-        ],
-        "availability": true,
-        "rating": 4.9
-    },
-    {
         "id": 5,
-        "title": "Apple Watch Series 8",
-        "image": "https://i.ibb.co.com/kc8ygRY/Apple-Watch-Series-8.webp",
-        "category": "Smart Watches",
-        "price": 500,
-        "description": "Advanced smartwatch with health and fitness tracking.",
-        "specification": [
-            "ECG App",
-            "Temperature Sensor",
-            "Crash Detection"
-        ],
-        "availability": false,
-        "rating": 4.6
+        "title": "Bluetooth Speaker",
+        "image": "https://i.ibb.co.com/GTRmq8t/Bluetooth-Speaker.jpg",
+        "category": "speaker",
+        "price": 75,
+        "description": "Portable Bluetooth speaker with deep bass.",
+        "specification": {
+            "Battery Life": "10 hours",
+            "Waterproof": "IPX7",
+            "Connectivity": "Bluetooth 5.1"
+        },
+        "availability": true,
+        "rating": 4.4
     },
     {
         "id": 6,
-        "title": "Dell XPS 15",
-        "image": "https://i.ibb.co.com/2dj1T4j/Dell-XPS-15.jpg",
-        "category": "Laptops",
-        "price": 1500,
-        "description": "Powerful laptop with stunning 4K display and NVIDIA graphics.",
-        "specification": [
-            "4K Display",
-            "NVIDIA GTX 1650 Ti",
-            "16GB RAM"
-        ],
+        "title": "Noise Cancelling Headphones",
+        "image": "https://i.ibb.co.com/zFvj6kG/Wireless-Headphones.jpg",
+        "category": "headphone",
+        "price": 150,
+        "description": "Wireless noise-cancelling headphones with long battery life.",
+        "specification": {
+            "Battery Life": "20 hours",
+            "Connectivity": "Bluetooth",
+            "Features": "Noise Cancelling"
+        },
         "availability": true,
-        "rating": 4.8
+        "rating": 4.6
     },
     {
         "id": 7,
-        "title": "Google Pixel 7 Pro",
-        "image": "https://i.ibb.co.com/p4qv2Zg/Google-Pixel-7-Pro.jpg",
-        "category": "Phones",
-        "price": 900,
-        "description": "AI-enhanced Android smartphone with an incredible camera.",
-        "specification": [
-            "Tensor G2 Chip",
-            "50MP Camera",
-            "Stock Android"
-        ],
+        "title": "Smart Watch",
+        "image": "https://i.ibb.co.com/dLtFk0s/Fitbit-Versa-4.jpg",
+        "category": "watch",
+        "price": 200,
+        "description": "Smart watch with fitness tracking and notifications.",
+        "specification": {
+            "Display": "AMOLED",
+            "Battery Life": "7 days",
+            "Features": "Heart Rate Monitor, GPS"
+        },
         "availability": true,
         "rating": 4.5
     },
     {
         "id": 8,
-        "title": "MacBook Air M2",
-        "image": "https://i.ibb.co.com/KGnh4Xv/Mac-Book-Air-M2.jpg",
-        "category": "MacBook",
-        "price": 1100,
-        "description": "Lightweight and powerful laptop with M2 chip.",
-        "specification": [
-            "M2 Chip",
-            "8GB RAM",
-            "256GB SSD"
-        ],
-        "availability": true,
-        "rating": 4.7
+        "title": "Home Theater Speaker",
+        "image": "https://i.ibb.co.com/GMD31pV/how-to-set-up-home-theater-system.jpg",
+        "category": "speaker",
+        "price": 250,
+        "description": "5.1 surround sound home theater speaker system.",
+        "specification": {
+            "Output Power": "500W",
+            "Connectivity": "HDMI, Optical, Bluetooth",
+            "Features": "Dolby Atmos"
+        },
+        "availability": false,
+        "rating": 4.6
     },
     {
         "id": 9,
-        "title": "Samsung Galaxy Watch 5",
-        "image": "https://i.ibb.co.com/T4h4mcV/Samsung-Galaxy-Watch-5.jpg",
-        "category": "Smart Watches",
-        "price": 350,
-        "description": "Feature-packed smartwatch with excellent health tracking.",
-        "specification": [
-            "Sleep Tracking",
-            "Heart Rate Monitor",
-            "GPS"
-        ],
+        "title": "Full HD Monitor",
+        "image": "https://i.ibb.co.com/86JY59M/Full-HD-Monitor.webp",
+        "category": "monitor",
+        "price": 150,
+        "description": "24-inch Full HD monitor with vibrant colors.",
+        "specification": {
+            "Resolution": "1920x1080",
+            "Refresh Rate": "75Hz",
+            "Ports": "HDMI, VGA"
+        },
         "availability": false,
         "rating": 4.4
     },
     {
         "id": 10,
-        "title": "Lenovo ThinkPad X1 Carbon",
-        "image": "https://i.ibb.co.com/C8Q7kNH/Lenovo-Think-Pad-X1-Carbon.jpg",
-        "category": "Laptops",
-        "price": 1400,
-        "description": "Durable business laptop with top-notch performance.",
-        "specification": [
-            "Intel i7 Processor",
-            "16GB RAM",
-            "1TB SSD"
-        ],
-        "availability": true,
-        "rating": 4.8
+        "title": "Sports Watch",
+        "image": "https://i.ibb.co.com/VDnxkXF/Sports-Watch.jpg",
+        "category": "watch",
+        "price": 100,
+        "description": "Durable sports watch for outdoor activities.",
+        "specification": {
+            "Display": "LCD",
+            "Battery Life": "30 days",
+            "Features": "Waterproof, Compass"
+        },
+        "availability": false,
+        "rating": 4.3
     },
     {
         "id": 11,
-        "title": "iPhone SE 2022",
-        "image": "https://i.ibb.co.com/gwYGrX5/i-Phone-SE-2022.jpg",
-        "category": "Iphone",
-        "price": 450,
-        "description": "Affordable iPhone with A15 Bionic chip.",
-        "specification": [
-            "A15 Bionic Chip",
-            "4.7-inch Retina Display",
-            "5G Support"
-        ],
+        "title": "Ergonomic Mouse",
+        "image": "https://i.ibb.co.com/LdGSxdb/Ergonomic-Mouse.jpg",
+        "category": "mouse",
+        "price": 50,
+        "description": "Ergonomic wireless mouse with adjustable DPI.",
+        "specification": {
+            "DPI": "800-1600",
+            "Battery Life": "12 months",
+            "Connectivity": "Bluetooth 5.0"
+        },
         "availability": true,
         "rating": 4.3
     },
     {
         "id": 12,
-        "title": "Apple Watch SE",
-        "image": "https://i.ibb.co.com/18vPdSX/Apple-Watch-SE.jpg",
-        "category": "Smart Watches",
-        "price": 300,
-        "description": "Affordable smartwatch with essential features.",
-        "specification": [
-            "Heart Rate Monitor",
-            "Activity Tracking",
-            "GPS"
-        ],
-        "availability": false,
-        "rating": 4.5
-    },
-    {
-        "id": 13,
-        "title": "Asus ROG Zephyrus G14",
-        "image": "https://i.ibb.co.com/sPXRNgy/Asus-ROG-Zephyrus-G14.jpg",
-        "category": "Laptops",
-        "price": 1600,
-        "description": "High-performance gaming laptop with AMD Ryzen processor.",
-        "specification": [
-            "AMD Ryzen 9",
-            "RTX 3060",
-            "144Hz Display"
-        ],
-        "availability": true,
-        "rating": 4.9
-    },
-    {
-        "id": 14,
-        "title": "Huawei Watch GT 3",
-        "image": "https://i.ibb.co.com/kJhBGs9/Huawei-Watch-GT-3.jpg",
-        "category": "Smart Watches",
-        "price": 250,
-        "description": "Elegant smartwatch with long battery life.",
-        "specification": [
-            "14-Day Battery",
-            "SpO2 Monitoring",
-            "GPS"
-        ],
-        "availability": true,
-        "rating": 4.4
-    },
-    {
-        "id": 15,
-        "title": "iPhone 13 Mini",
-        "image": "https://i.ibb.co.com/StCvj75/i-Phone-13-Mini.jpg",
-        "category": "Iphone",
-        "price": 700,
-        "description": "Compact flagship smartphone with A15 Bionic chip.",
-        "specification": [
-            "A15 Bionic Chip",
-            "Dual Camera System",
-            "5.4-inch Display"
-        ],
-        "availability": false,
-        "rating": 4.6
-    },
-    {
-        "id": 16,
-        "title": "Microsoft Surface Laptop 5",
-        "image": "https://i.ibb.co.com/hsTb409/Microsoft-Surface-Laptop-5.webp",
-        "category": "Laptops",
-        "price": 1300,
-        "description": "Sleek and lightweight laptop for productivity.",
-        "specification": [
-            "Intel i5 Processor",
-            "8GB RAM",
-            "256GB SSD"
-        ],
-        "availability": true,
-        "rating": 4.7
-    },
-    {
-        "id": 17,
-        "title": "iPhone 14",
-        "image": "https://i.ibb.co.com/f2Z63Yd/i-Phone-14.jpg",
-        "category": "Iphone",
-        "price": 1200,
-        "description": "Latest iPhone with advanced features.",
-        "specification": [
-            "A16 Bionic Chip",
-            "6.1-inch Display",
-            "Dual Camera System"
-        ],
-        "availability": true,
-        "rating": 4.8
-    },
-    {
-        "id": 18,
-        "title": "Fitbit Versa 4",
-        "image": "https://i.ibb.co.com/dLtFk0s/Fitbit-Versa-4.jpg",
-        "category": "Smart Watches",
-        "price": 200,
-        "description": "Affordable fitness-focused smartwatch.",
-        "specification": [
-            "Sleep Tracking",
-            "Heart Rate Monitor",
-            "6-Day Battery"
-        ],
+        "title": "Wireless Keyboard",
+        "image": "https://i.ibb.co.com/61PVVsy/Wireless-Keyboard.jpg",
+        "category": "keyboard",
+        "price": 60,
+        "description": "Slim and portable wireless keyboard.",
+        "specification": {
+            "Connectivity": "Bluetooth",
+            "Battery Life": "6 months",
+            "Features": "Compact Design"
+        },
         "availability": false,
         "rating": 4.3
     },
     {
-        "id": 19,
-        "title": "Bluetooth Speaker",
-        "image": "https://i.ibb.co.com/GTRmq8t/Bluetooth-Speaker.jpg",
-        "category": "Accessories",
-        "price": 55.49,
-        "description": "Compact Bluetooth speaker with deep bass and 12-hour playtime.",
+        "id": 13,
+        "title": "Business Laptop",
+        "image": "https://i.ibb.co.com/KGnh4Xv/Mac-Book-Air-M2.jpg",
+        "category": "laptop",
+        "price": 900,
+        "description": "Lightweight business laptop with extended battery life.",
         "specification": {
-            "battery_life": "12 hours",
-            "connectivity": "Bluetooth 5.1",
-            "weight": "500g",
-            "color": "Red"
+            "Processor": "AMD Ryzen 5",
+            "RAM": "8GB",
+            "Storage": "256GB SSD",
+            "Display": "14 inch Full HD"
+        },
+        "availability": false,
+        "rating": 4.2
+    },
+    {
+        "id": 14,
+        "title": "Wired Headphones",
+        "image": "https://i.ibb.co.com/7jhkfP7/Wired-Headphones.jpg",
+        "category": "headphone",
+        "price": 50,
+        "description": "Over-ear wired headphones with clear audio quality.",
+        "specification": {
+            "Driver Size": "40mm",
+            "Connectivity": "3.5mm Jack",
+            "Features": "Lightweight Design"
+        },
+        "availability": false,
+        "rating": 4.2
+    },
+    {
+        "id": 15,
+        "title": "Ultrabook Laptop",
+        "image": "https://i.ibb.co.com/C8Q7kNH/Lenovo-Think-Pad-X1-Carbon.jpg",
+        "category": "laptop",
+        "price": 1100,
+        "description": "Slim and lightweight ultrabook for professionals.",
+        "specification": {
+            "Processor": "Intel Core i5",
+            "RAM": "8GB",
+            "Storage": "256GB SSD",
+            "Display": "13.3 inch Full HD"
         },
         "availability": true,
         "rating": 4.6
     },
     {
-        "id": 20,
-        "title": "Portable Charger",
-        "image": "https://i.ibb.co.com/j47txFy/Portable-Charger.jpg",
-        "category": "Accessories",
-        "price": 29.99,
-        "description": "10,000mAh portable charger with fast charging support.",
+        "id": 16,
+        "title": "Gaming Keyboard",
+        "image": "https://i.ibb.co.com/hR3Lz7h/Gaming-Keyboard.jpg",
+        "category": "keyboard",
+        "price": 130,
+        "description": "Gaming keyboard with RGB lighting and programmable keys.",
         "specification": {
-            "capacity": "10000mAh",
-            "input": "USB-C",
-            "output": "USB-A, USB-C",
-            "weight": "200g"
+            "Switch Type": "Mechanical",
+            "Connectivity": "Wired",
+            "Lighting": "Customizable RGB"
         },
         "availability": false,
         "rating": 4.8
     },
     {
-        "id": 21,
-        "title": "Gaming Mouse",
+        "id": 17,
+        "title": "Silent Mouse",
         "image": "https://i.ibb.co.com/7jRNTXJ/Gaming-Mouse.webp",
-        "category": "Accessories",
-        "price": 45.99,
-        "description": "Ergonomic gaming mouse with customizable RGB lighting.",
+        "category": "mouse",
+        "price": 80,
+        "description": "Silent click wireless mouse for quiet environments.",
         "specification": {
-            "dpi": "16000",
-            "buttons": "7",
-            "weight": "120g",
-            "connectivity": "USB"
+            "DPI": "1000-2400",
+            "Battery Life": "18 months",
+            "Connectivity": "Bluetooth 5.2"
         },
         "availability": true,
+        "rating": 4.4
+    },
+    {
+        "id": 18,
+        "title": "Curved Monitor",
+        "image": "https://i.ibb.co.com/G0Q018n/Curved-Monitor.jpg",
+        "category": "monitor",
+        "price": 400,
+        "description": "34-inch ultra-wide curved monitor for immersive experience.",
+        "specification": {
+            "Resolution": "3440x1440",
+            "Refresh Rate": "120Hz",
+            "Ports": "HDMI, USB-C"
+        },
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "id": 19,
+        "title": "Portable Bluetooth Speaker",
+        "image": "https://i.ibb.co.com/ccM5qpM/Portable-Bluetooth-Speaker.jpg",
+        "category": "speaker",
+        "price": 90,
+        "description": "Compact Bluetooth speaker with rich sound quality.",
+        "specification": {
+            "Battery Life": "8 hours",
+            "Waterproof": "IPX5",
+            "Connectivity": "Bluetooth 5.0"
+        },
+        "availability": false,
         "rating": 4.5
     },
     {
-        "id": 22,
-        "title": "Wireless Headphones",
-        "image": "https://i.ibb.co.com/zFvj6kG/Wireless-Headphones.jpg",
-        "category": "Accessories",
-        "price": 75.99,
-        "description": "High-quality wireless headphones with noise cancellation.",
+        "id": 20,
+        "title": "Over-Ear Headphones",
+        "image": "https://i.ibb.co.com/94X7gp1/Over-Ear-Headphones.jpg",
+        "category": "headphone",
+        "price": 120,
+        "description": "Comfortable over-ear headphones with powerful bass.",
         "specification": {
-            "battery_life": "20 hours",
-            "connectivity": "Bluetooth 5.0",
-            "weight": "250g",
-            "color": "Black"
+            "Battery Life": "25 hours",
+            "Connectivity": "Bluetooth and Wired",
+            "Features": "Foldable Design"
+        },
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "id": 21,
+        "title": "Advanced Smart Watch",
+        "image": "https://i.ibb.co.com/kJhBGs9/Huawei-Watch-GT-3.jpg",
+        "category": "watch",
+        "price": 250,
+        "description": "Advanced smart watch with ECG and blood oxygen monitoring.",
+        "specification": {
+            "Display": "AMOLED",
+            "Battery Life": "5 days",
+            "Features": "ECG, SpO2, GPS"
         },
         "availability": false,
-        "rating": 4.7
+        "rating": 4.8
+    },
+    {
+        "id": 22,
+        "title": "Professional Laptop",
+        "image": "https://i.ibb.co.com/sPXRNgy/Asus-ROG-Zephyrus-G14.jpg",
+        "category": "laptop",
+        "price": 1400,
+        "description": "Professional laptop with high-end performance for creators.",
+        "specification": {
+            "Processor": "Intel Core i9",
+            "RAM": "32GB",
+            "Storage": "1TB SSD",
+            "Display": "16 inch 4K UHD"
+        },
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "id": 23,
+        "title": "Multimedia Keyboard",
+        "image": "https://i.ibb.co.com/hsP77kp/Multimedia-Keyboard.jpg",
+        "category": "keyboard",
+        "price": 120,
+        "description": "Wired multimedia keyboard with dedicated media controls.",
+        "specification": {
+            "Switch Type": "Membrane",
+            "Connectivity": "USB Wired",
+            "Features": "Dedicated Media Keys"
+        },
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "id": 24,
+        "title": "Gaming Headset",
+        "image": "https://i.ibb.co.com/5Mm0gf5/Gaming-Headset.webp",
+        "category": "headphone",
+        "price": 180,
+        "description": "Gaming headset with surround sound and noise isolation.",
+        "specification": {
+            "Driver Size": "50mm",
+            "Connectivity": "Wired",
+            "Features": "Surround Sound, Noise Isolation"
+        },
+        "availability": false,
+        "rating": 4.6
     }
 ]

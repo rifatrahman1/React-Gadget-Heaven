@@ -1,0 +1,93 @@
+[
+
+    {
+        "id": 5,
+        "title": "Sony Announces PlayStation 6",
+        "image": "https://i.ibb.co.com/3SYBFXZ/Sony-Announces-Play-Station-6.webp",
+        "category": "gaming",
+        "description": "Sony confirms PlayStation 6 release in late 2025 with enhanced graphics and VR capabilities.",
+        "date": "2025-01-18",
+        "author": "GameZone",
+        "source": "https://sony.com/ps6",
+        "tags": [
+            "Sony",
+            "PlayStation",
+            "Gaming"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Top 5 Budget Laptops for 2025",
+        "image": "https://i.ibb.co.com/FstnDMc/Top-5-Budget-Laptops-for-2025.jpg",
+        "category": "laptop",
+        "description": "Here are the top 5 budget-friendly laptops for students and professionals in 2025.",
+        "date": "2025-01-05",
+        "author": "TechSavvy",
+        "source": "https://techsavvy.com/budget-laptops",
+        "tags": [
+            "Laptop",
+            "Budget",
+            "Top Picks"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Tesla Unveils Self-Charging Electric Car",
+        "image": "https://i.ibb.co.com/BTNNPWs/Tesla-Unveils-Self-Charging-Electric-Car.webp",
+        "category": "automobile",
+        "description": "Tesla's new self-charging EV uses solar technology for enhanced efficiency.",
+        "date": "2025-01-25",
+        "author": "AutoTech",
+        "source": "https://tesla.com/self-charging-ev",
+        "tags": [
+            "Tesla",
+            "Electric Vehicle",
+            "Solar Power"
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Amazon's Drone Delivery Expands",
+        "image": "https://i.ibb.co.com/54y1msh/Amazon-s-Drone-Delivery-Expands.jpg",
+        "category": "logistics",
+        "description": "Amazon announces its drone delivery service expansion to 20 more cities.",
+        "date": "2025-01-17",
+        "author": "Ecommerce Today",
+        "source": "https://amazon.com/drone-delivery",
+        "tags": [
+            "Amazon",
+            "Drones",
+            "Delivery"
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Microsoft's Windows 12 Update: What's New?",
+        "image": "https://i.ibb.co.com/WFsqQhw/Microsoft-s-Windows-12.jpg",
+        "category": "software",
+        "description": "Microsoft's Windows 12 introduces new features like AI integration and better security.",
+        "date": "2025-01-12",
+        "author": "Software Weekly",
+        "source": "https://microsoft.com/windows12",
+        "tags": [
+            "Microsoft",
+            "Windows",
+            "Update"
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Oppo Introduces Foldable Smartphone",
+        "image": "https://i.ibb.co.com/pbWFp9Q/Oppo-Introduces-Foldable-Smartphone.jpg",
+        "category": "smartphone",
+        "description": "Oppo's new foldable phone is set to compete with Samsung's Galaxy Fold series.",
+        "date": "2025-01-14",
+        "author": "GadgetReview",
+        "source": "https://oppo.com/foldable-phone",
+        "tags": [
+            "Oppo",
+            "Smartphone",
+            "Foldable"
+        ]
+    }
+]
