@@ -1,9 +1,10 @@
 
 import { useLoaderData } from 'react-router-dom';
 import NewsHead from './NewsHead';
+import Newsletter from './Newsletter';
 
 const HeadNews = () => {
-    const headnews = useLoaderData();
+    const news = useLoaderData();
     return (
         <div>
             <div className='flex items-center gap-5 mt-12'>
@@ -23,7 +24,14 @@ const HeadNews = () => {
             <div className="divider my-5"></div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
                 {
-                    headnews.map((headnews) => <NewsHead key={headnews.id} headnews={headnews}></NewsHead>)
+                    news?.slice(0, 4).map((headnews) => <NewsHead key={headnews.id} headnews={headnews}></NewsHead>)
+                }
+            </div>
+            <div className="divider my-16"></div>
+            <h2 className='text-2xl font-bold'>Latest headlines</h2>
+            <div className='my-6'>
+                {
+                    news?.slice(5).map((newsletter) => <Newsletter key={newsletter.id} newsletter={newsletter}></Newsletter>)
                 }
             </div>
         </div>

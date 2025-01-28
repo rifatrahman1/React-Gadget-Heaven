@@ -16,7 +16,6 @@ import Details from './Components/Details';
 import Cart from './Components/Cart';
 import Wish from './Components/Wish';
 import { CartProvider } from './Utilities/Cart_Context';
-import News from './Components/News';
 import HeadNews from './Components/HeadNews';
 
 const router = createBrowserRouter([
@@ -54,14 +53,7 @@ const router = createBrowserRouter([
       {
         path: '/news',
         element: <HeadNews></HeadNews>,
-        loader: () => fetch('../headnews.json'),
-        children: [
-          {
-            path: '/news/letter',
-            element: <News></News>,
-            loader: () => fetch('../news.json')
-          },
-        ]
+        loader: () => fetch('../news.json'),
       },
 
       {
