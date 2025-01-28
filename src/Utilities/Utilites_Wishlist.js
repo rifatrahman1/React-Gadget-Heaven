@@ -11,7 +11,7 @@ const add_wishlist = (gadget) => {
     if (!isAlreadyAdded) {
         wishlist.push(gadget);
         localStorage.setItem('wishlist', JSON.stringify(wishlist));
-        toast.success('Successfully This is Product Gadget Added...!');
+        toast.success('Successfully This is Gadget Wishlist Added...!');
     }
     else {
         return toast.error('This is Product Gadget Already Exist...!');

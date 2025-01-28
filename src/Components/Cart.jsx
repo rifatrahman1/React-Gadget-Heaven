@@ -10,10 +10,12 @@ import sort from '../assets/sort.png'
 import Cart_List from "./Cart_List";
 import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import { useCart } from "../Utilities/Cart_Context";
 const Cart = () => {
 
     const navigate = useNavigate();
-    
+    const { cartCount, wishlistCount, removeToCart } = useCart();
+    console.log('object1', cartCount, 'object2', wishlistCount);
     const [gadgets, set_gadgets] = useState([]);
     const [disable, set_disable] = useState(false);
     const [total , set_total] = useState(0);
@@ -27,6 +29,7 @@ const Cart = () => {
     useEffect(() => {
         let favorite = get_all_favorites()
         set_gadgets(favorite);
+        
 
     }, [])
 
@@ -71,6 +74,7 @@ const Cart = () => {
                     localStorage.removeItem('favorites');
                     toast.success('Successfully This is Gadget Purchase it...!');
                     set_gadgets([]);
+                    removeToCart();
                     navigate("/");
                 });
             }
