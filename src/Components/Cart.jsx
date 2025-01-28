@@ -1,6 +1,4 @@
 
-
-
 import { useEffect, useState } from "react";
 import { get_all_favorites, remove_favorite } from "../Utilities/Utilities_Cart";
 import Swal from "sweetalert2";

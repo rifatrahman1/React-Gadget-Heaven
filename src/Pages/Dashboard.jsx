@@ -1,7 +1,10 @@
 
+import { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 const Dashboard = () => {
-
+    useEffect(() => {
+        document.title = "Dashboard - Gadget Heaven";
+    }, []);
     return (
         <div>
             <div>

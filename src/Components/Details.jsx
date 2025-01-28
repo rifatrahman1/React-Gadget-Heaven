@@ -18,6 +18,10 @@ const Details = () => {
     const [disable, set_disable] = useState(false);
 
     useEffect(() => {
+        document.title = "Details | Gadget Heaven";
+    }, []);
+
+    useEffect(() => {
         const gadget = data.find((gadget) => gadget.id === gadget_id);
         if (gadget) set_gadgets(gadget);
         const favorite = get_all_favorites();

@@ -2,9 +2,13 @@
 import { useLoaderData } from 'react-router-dom';
 import NewsHead from './NewsHead';
 import Newsletter from './Newsletter';
+import { useEffect } from 'react';
 
 const HeadNews = () => {
     const news = useLoaderData();
+    useEffect(() => {
+        document.title = "News - Gadget Heaven";
+      }, []);
     return (
         <div>
             <div className='flex items-center gap-5 mt-12'>
