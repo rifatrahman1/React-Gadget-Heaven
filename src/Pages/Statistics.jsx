@@ -4,7 +4,7 @@ import Chart from "../Components/ChartData";
 
 const Statistics = () => {
     useEffect(() => {
-        document.title = "Statistics - Gadget Heaven";
+        document.title = "Statistics | Gadget Heaven";
       }, []);
     return (
         <div className="mt-12">

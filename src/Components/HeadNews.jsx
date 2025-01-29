@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 const HeadNews = () => {
     const news = useLoaderData();
     useEffect(() => {
-        document.title = "News - Gadget Heaven";
+        document.title = "News | Gadget Heaven";
       }, []);
     return (
         <div>
